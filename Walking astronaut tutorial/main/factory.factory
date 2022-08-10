@@ -1,0 +1,2 @@
+prototype: "/main/bullet.go"
+load_dynamically: false
