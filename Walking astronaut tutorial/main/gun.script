@@ -1,4 +1,4 @@
-go.property("fire_rate", 0.5)
+go.property("fire_rate", 0.1)
 function init(self)
 	msg.post(".", "acquire_input_focus")
 	self.loaded = true
@@ -61,7 +61,8 @@ function fire_gun(self)
 	if  self.loaded then 
 		local component = "#factory"
 		local p = go.get_position("/astronaut")
-		factory.create(component, p, nil, {dir = self.dir}, 1)
+		local v = self.dir * 50
+		factory.create(component, p, nil, {dir = v}, 1)
 		self.loaded = false
 	end
 end

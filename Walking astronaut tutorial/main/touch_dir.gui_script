@@ -78,9 +78,11 @@ function update(self, dt)
 		if new_x - del_do <= left then
 			new_x = left
 			self.click("left")
+			pain_blue("right")
 		elseif new_x >= right - del_do then
 			new_x = right
 			self.click("right")
+			pain_blue("left")
 		else
 			pain_blue("left")
 			pain_blue("right")

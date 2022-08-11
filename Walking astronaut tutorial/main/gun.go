@@ -12,6 +12,11 @@ components {
     z: 0.0
     w: 1.0
   }
+  properties {
+    id: "fire_rate"
+    value: "0.1"
+    type: PROPERTY_TYPE_NUMBER
+  }
 }
 components {
   id: "factory"
