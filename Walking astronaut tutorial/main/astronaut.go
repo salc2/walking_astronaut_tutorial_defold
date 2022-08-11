@@ -19,8 +19,23 @@ components {
   }
 }
 components {
-  id: "touch"
-  component: "/main/touch.gui"
+  id: "touch_action"
+  component: "/main/touch_action.gui"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+}
+components {
+  id: "touch_dir"
+  component: "/main/touch_dir.gui"
   position {
     x: 0.0
     y: 0.0

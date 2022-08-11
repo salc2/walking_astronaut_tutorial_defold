@@ -57,14 +57,14 @@ function update(self, dt)
 end
 
 function on_message(self, message_id, message, sender)
-	--pprint(message.action_id)
+
 	walk(self, hash(message.action_id))
 end
 
 
 
 function walk_sound_on(self)
-	sound.play("#footstep", {delay = 0, gain = 0.5, pan = -1.0, speed = 3.0})
+	sound.play("#footstep", {delay = 0, gain = 0.5, pan = 0, speed = 3.0})
 	
 	playing = true
 end
@@ -94,9 +94,4 @@ end
 
 function on_input(self, action_id, action)
 	walk(self, action_id)
-end
-
-function on_reload(self)
-	-- Add reload-handling code here
-	-- Remove this function if not needed
 end
